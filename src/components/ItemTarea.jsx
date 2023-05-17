@@ -4,7 +4,7 @@ const ItemTarea = () => {
     return (
         <div>
             <ListGroup.Item className="d-flex justify-content-between">
-                Elemento agregado
+                Un elemento agregado
                 <Button variant="danger">Borrar</Button>
             </ListGroup.Item>
         </div>

@@ -10,7 +10,7 @@ function App() {
     <Container className='my-5 mainPage'>
       <h1 className='display-4 text-center'>Listado de Tareas</h1>
       <hr />
-      {/*aqui se agrega el componente*/}
+      {/*aqui se agrega el componenete*/}
       <Formulario/>
     </Container>
     <footer className='bg-dark text-center text-secondary py-4'>

@@ -1,4 +1,7 @@
+import {Button,Form} from 'react-bootstrap';
+import ListaTareas from './ListaTareas';
 import { useState } from 'react';
+
 const Formulario = () => {
     const [tarea, setTarea] = useState('');
     const [tareas, setTareas] = useState([]);
