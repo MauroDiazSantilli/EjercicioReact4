@@ -7,7 +7,7 @@ const Formulario = () => {
     const [tareas, setTareas] = useState([]);
 
     const handleSubmit = (e) => {
-        e.preventdDefault()
+        e.preventDefault()
     
     if (tarea.trim() !== ""){
     
