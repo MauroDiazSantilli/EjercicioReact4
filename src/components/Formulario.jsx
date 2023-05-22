@@ -13,8 +13,14 @@ const Formulario = () => {
     
         setConjuntoTareas([...conjuntoTareas, tarea])
         setTarea("")
+    }   
     }
-    }
+
+    const borrarTarea = (tarea) => {
+        const nuevoConjuntoTareas = conjuntoTareas.filter((item) => item !== tarea);
+        setConjuntoTareas(nuevoConjuntoTareas);
+      };
+
     return (
         <div>
             <Form onSubmit={handleSubmit}>
@@ -28,7 +34,7 @@ const Formulario = () => {
                     </Button>
                 </Form.Group>
             </Form>
-            <ListaTareas conjuntoTareas = {conjuntoTareas}/>
+            <ListaTareas conjuntoTareas = {conjuntoTareas} borrarTarea={borrarTarea}/>
         </div>
     );
 };
