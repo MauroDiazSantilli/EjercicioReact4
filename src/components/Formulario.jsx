@@ -4,14 +4,14 @@ import React, { useState } from 'react';
 
 const Formulario = () => {
     const [tarea, setTarea] = useState('');
-    const [tareas, setTareas] = useState([]);
+    const [conjuntoTareas, setConjuntoTareas] = useState([]);
 
     const handleSubmit = (e) => {
         e.preventDefault()
     
     if (tarea.trim() !== ""){
     
-        setTareas([...tareas, tarea])
+        setConjuntoTareas([...conjuntoTareas, tarea])
         setTarea("")
     }
     }
@@ -28,7 +28,7 @@ const Formulario = () => {
                     </Button>
                 </Form.Group>
             </Form>
-            <ListaTareas tareas = {tareas}/>
+            <ListaTareas conjuntoTareas = {conjuntoTareas}/>
         </div>
     );
 };
