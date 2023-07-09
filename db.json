@@ -1,0 +1,20 @@
+{
+  "tareas": [
+    {
+      "tarea": "Ir al veterinario",
+      "id": 1
+    },
+    {
+      "tarea": "Cortar el pasto",
+      "id": 2
+    },
+    {
+      "tarea": "Lavar el auto",
+      "id": 3
+    },
+    {
+      "tarea": "Comprar viveres",
+      "id": 4
+    }
+  ]
+}
